@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeri Gambar Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .grid-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .grid-container img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeri Gambar</h1>
+  <div class="grid-container">
+    <img src="https://picsum.photos/300/200?random=1" alt="Gambar 1">
+    <img src="https://picsum.photos/300/200?random=2" alt="Gambar 2">
+    <img src="https://picsum.photos/300/200?random=3" alt="Gambar 3">
+    <img src="https://picsum.photos/300/200?random=4" alt="Gambar 4">
+    <img src="https://picsum.photos/300/200?random=5" alt="Gambar 5">
+    <img src="https://picsum.photos/300/200?random=6" alt="Gambar 6">
+  </div>
+</body>
+</html>
